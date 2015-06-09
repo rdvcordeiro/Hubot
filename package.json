@@ -5,6 +5,7 @@
   "author": "Qijin Zhou <qijin.zhou@outlook.com>",
   "description": "Derp",
   "dependencies": {
+    "coffee-script": "^1.9.3",
     "hubot": "^2.13.1",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.1.5",
