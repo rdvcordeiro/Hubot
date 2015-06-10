@@ -120,6 +120,11 @@ fi
 # 4. Create Hubot file with a coffee extension
 cp "$DEPLOYMENT_TARGET/node_modules/hubot/bin/hubot" "$DEPLOYMENT_TARGET/node_modules/hubot/bin/hubot.coffee"
 
+# 5. Create App_Data from brain data
+if [[ ! -e "$DEPLOYMENT_TARGET/App_Data" ]]; then
+  mkdir -p "$DEPLOYMENT_TARGET/App_Data"
+fi
+
 ##################################################################################################################################
 
 # Post deployment stub
