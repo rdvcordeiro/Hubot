@@ -5,7 +5,7 @@
 #   hubot <query>.gif - Queries Google Images for <query> and returns a random top result.
 
 module.exports = (robot) ->
-  robot.respond /(.*?)(.gif)/i, (msg) ->
+  robot.hear /(.*?)(.gif)/i, (msg) ->
     imageMe msg, msg.match[1], (url) ->
       msg.send url
 
