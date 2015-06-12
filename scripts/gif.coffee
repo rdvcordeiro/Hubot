@@ -2,7 +2,7 @@
 #   A way to interact with the Google Images API.
 #
 # Commands:
-#   hubot <query>.gif - Queries Google Images for <query> and returns a random top result.
+#   <query>.gif - Queries Google Images for animations of <query> and returns a random top result.
 
 module.exports = (robot) ->
   robot.hear /(.*?)(.gif)/i, (msg) ->
