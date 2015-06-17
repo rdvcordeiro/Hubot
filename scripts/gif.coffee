@@ -5,7 +5,7 @@
 #   <query>.gif - Queries Google Images for animations of <query> and returns a random top result.
 
 module.exports = (robot) ->
-  robot.hear /(.*?)(.gif)/i, (msg) ->
+  robot.hear /(.*?)(\.gif)/i, (msg) ->
     imageMe msg, msg.match[1], (url) ->
       msg.send url
 
